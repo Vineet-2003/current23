@@ -25,9 +25,41 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="#">Events</a>
+        <a href="#">Workshops</a>
+        <a href="#">Tronicals</a>
+        <a href="#">Team</a>
+        <a href="#">Certificate</a>
+        <a href="#">Gallery</a>
+      </div>
+    </div>
+    <div id="bg">
+      <canvas id="c"></canvas>
+    </div>
+    <div id="navigation-bar">
+      <div class="menubar" onclick="openNav()">
+        <span id="first-class"></span>
+        <span id="second-class"></span>
+        <span id="third-class"></span>
+      </div>
+    </div>
+    
+    <div id="social-media-links">
+      <a href="https://www.instagram.com/currents_nitt/" target=”_blank”><img src="https://i.ibb.co/Cm2SPDq/facebook-logo.png" alt="facebook-logo" border="0" class="social-media"></a>
+      <a href="https://www.instagram.com/currents_nitt/" target=”_blank”><img src="https://i.ibb.co/qgKYJtZ/instagram-logo.png" alt="instagram-logo" border="0" class="social-media"></a>
+      <a href="https://www.linkedin.com/company/currents-nitt/" target=”_blank”><img src="https://i.ibb.co/Xy8ZT09/linkedin-logo.png" alt="linkedin-logo" border="0" class="social-media"></a>
+      <a href="https://www.linkedin.com/company/currents-nitt/" target=”_blank”><img src="https://i.ibb.co/7bVwg4s/twitter-logo.png" alt="twitter-logo" border="0" class="social-media"></a>
+    </div>
+    <div id="text">
+      <div>Currents'23</div>
+      <div class="text"></div>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -40,4 +72,5 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script src="script.js"></script>
 </html>
